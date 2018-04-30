@@ -10,7 +10,6 @@ import stats from './dist/react-loadable.json';
 
 const app = express()
 
-
 const html = (markup, bundles) => {
   return (`
     <!DOCTYPE html>
@@ -44,8 +43,6 @@ app.get('/', (req, res) => {
 
   res.end(html(markup, bundles))
 })
-
-
 
 Loadable.preloadAll().then(() => {
   app.listen(3000, () => console.log('Example app listening on port 3000!'))
