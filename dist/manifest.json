@@ -1,0 +1,5 @@
+{
+  "main.js": "/client/main.bundle.js",
+  "0.bundle.js": "/client/0.bundle.js",
+  "runtime~main.js": "/client/runtime~main.bundle.js"
+}

@@ -1,0 +1,191 @@
+{
+  "./App": [
+    {
+      "id": "./client/App.js",
+      "name": "./client/App.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "./client/index.js": [
+    {
+      "id": "./client/index.js",
+      "name": "./client/index.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "fbjs/lib/ExecutionEnvironment": [
+    {
+      "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "./camelize": [
+    {
+      "id": "./node_modules/fbjs/lib/camelize.js",
+      "name": "./node_modules/fbjs/lib/camelize.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "fbjs/lib/camelizeStyleName": [
+    {
+      "id": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "name": "./node_modules/fbjs/lib/camelizeStyleName.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "fbjs/lib/containsNode": [
+    {
+      "id": "./node_modules/fbjs/lib/containsNode.js",
+      "name": "./node_modules/fbjs/lib/containsNode.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "fbjs/lib/emptyFunction": [
+    {
+      "id": "./node_modules/fbjs/lib/emptyFunction.js",
+      "name": "./node_modules/fbjs/lib/emptyFunction.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "fbjs/lib/emptyObject": [
+    {
+      "id": "./node_modules/fbjs/lib/emptyObject.js",
+      "name": "./node_modules/fbjs/lib/emptyObject.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "fbjs/lib/getActiveElement": [
+    {
+      "id": "./node_modules/fbjs/lib/getActiveElement.js",
+      "name": "./node_modules/fbjs/lib/getActiveElement.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "./hyphenate": [
+    {
+      "id": "./node_modules/fbjs/lib/hyphenate.js",
+      "name": "./node_modules/fbjs/lib/hyphenate.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "fbjs/lib/hyphenateStyleName": [
+    {
+      "id": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "name": "./node_modules/fbjs/lib/hyphenateStyleName.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "fbjs/lib/invariant": [
+    {
+      "id": "./node_modules/fbjs/lib/invariant.js",
+      "name": "./node_modules/fbjs/lib/invariant.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "./isNode": [
+    {
+      "id": "./node_modules/fbjs/lib/isNode.js",
+      "name": "./node_modules/fbjs/lib/isNode.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "./isTextNode": [
+    {
+      "id": "./node_modules/fbjs/lib/isTextNode.js",
+      "name": "./node_modules/fbjs/lib/isTextNode.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "fbjs/lib/shallowEqual": [
+    {
+      "id": "./node_modules/fbjs/lib/shallowEqual.js",
+      "name": "./node_modules/fbjs/lib/shallowEqual.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "fbjs/lib/warning": [
+    {
+      "id": "./node_modules/fbjs/lib/warning.js",
+      "name": "./node_modules/fbjs/lib/warning.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "object-assign": [
+    {
+      "id": "./node_modules/object-assign/index.js",
+      "name": "./node_modules/object-assign/index.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "prop-types/checkPropTypes": [
+    {
+      "id": "./node_modules/prop-types/checkPropTypes.js",
+      "name": "./node_modules/prop-types/checkPropTypes.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "./factoryWithTypeCheckers": [
+    {
+      "id": "./node_modules/prop-types/factoryWithTypeCheckers.js",
+      "name": "./node_modules/prop-types/factoryWithTypeCheckers.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "prop-types": [
+    {
+      "id": "./node_modules/prop-types/index.js",
+      "name": "./node_modules/prop-types/index.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "./lib/ReactPropTypesSecret": [
+    {
+      "id": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "./cjs/react-dom.development.js": [
+    {
+      "id": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "name": "./node_modules/react-dom/cjs/react-dom.development.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "react-dom": [
+    {
+      "id": "./node_modules/react-dom/index.js",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "react-loadable": [
+    {
+      "id": "./node_modules/react-loadable/lib/index.js",
+      "name": "./node_modules/react-loadable/lib/index.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "./cjs/react.development.js": [
+    {
+      "id": "./node_modules/react/cjs/react.development.js",
+      "name": "./node_modules/react/cjs/react.development.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "react": [
+    {
+      "id": "./node_modules/react/index.js",
+      "name": "./node_modules/react/index.js",
+      "file": "main.bundle.js"
+    }
+  ],
+  "./Bar": [
+    {
+      "id": "./client/Bar.js",
+      "name": "./client/Bar.js",
+      "file": "0.bundle.js"
+    }
+  ]
+}
