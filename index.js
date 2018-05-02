@@ -33,7 +33,7 @@ const html = (markup, bundles) => {
 }
 
 app.use(express.static('dist'))
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
   let modules = [];
   const markup = renderToString(
     <Loadable.Capture report={moduleName => modules.push(moduleName)}>

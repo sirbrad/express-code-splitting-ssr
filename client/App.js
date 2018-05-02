@@ -7,14 +7,38 @@ const LoadableBar = Loadable({
     return <div>Loading...</div>
   }
 });
+const LoadableFoo = Loadable({
+  loader: () => import('./Foo'),
+  loading() {
+    return <div>Loading...</div>
+  }
+});
 
-const App = () => {
-  return (
-    <div>
-      <div>I am a real app, yay</div>
-      <LoadableBar />
-    </div>
-  )
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loadComponent: false
+    }
+  }
+
+  handleShowFoo(e) {
+    this.setState({
+      loadComponent: true
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <div>I am a real app, yay</div>
+        <div onClick={this.handleShowFoo.bind(this)}>Show Foo!</div>
+        <LoadableBar />
+        { this.state.loadComponent && <LoadableFoo /> }
+      </div>
+    )
+  }
 }
 
 export default App;

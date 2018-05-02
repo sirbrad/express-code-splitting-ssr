@@ -20,6 +20,13 @@
       "file": "0.bundle.js"
     }
   ],
+  "./Foo": [
+    {
+      "id": "./client/Foo.js",
+      "name": "./client/Foo.js",
+      "file": "1.bundle.js"
+    }
+  ],
   "fbjs/lib/ExecutionEnvironment": [
     {
       "id": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
