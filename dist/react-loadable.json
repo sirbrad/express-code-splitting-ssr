@@ -6,6 +6,13 @@
       "file": "main.bundle.js"
     }
   ],
+  "./Loading": [
+    {
+      "id": "./client/Loading.js",
+      "name": "./client/Loading.js",
+      "file": "main.bundle.js"
+    }
+  ],
   "./client/index.js": [
     {
       "id": "./client/index.js",
