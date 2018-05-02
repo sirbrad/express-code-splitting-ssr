@@ -1,17 +1,14 @@
 import React from "react";
 import Loadable from 'react-loadable';
+import Loading from "./Loading";
 
 const LoadableBar = Loadable({
   loader: () => import('./Bar'),
-  loading() {
-    return <div>Loading...</div>
-  }
+  loading: Loading
 });
 const LoadableFoo = Loadable({
   loader: () => import('./Foo'),
-  loading() {
-    return <div>Loading...</div>
-  }
+  loading: Loading
 });
 
 class App extends React.Component {
