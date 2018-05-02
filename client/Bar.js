@@ -7,7 +7,7 @@ const Bar = () => {
           console.log(e)
         }}
       >
-        barrbabababababaab
+        WAT
       </div>
       <div>barrbabababababaab</div>
       <div>barrbabababababaab</div>
