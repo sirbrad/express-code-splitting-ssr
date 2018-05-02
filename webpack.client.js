@@ -2,7 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
-const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
 
 module.exports = {
   context: __dirname,
@@ -35,12 +34,8 @@ module.exports = {
     crypto: "null"
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
     new ManifestPlugin({
       fileName: path.resolve(__dirname, './dist/manifest.json')
-    }),
-    new ReactLoadablePlugin({
-      filename: './dist/react-loadable.json',
     }),
   ],
   optimization: {
