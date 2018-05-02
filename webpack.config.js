@@ -43,16 +43,16 @@ module.exports = {
       filename: './dist/react-loadable.json',
     }),
   ],
-  // optimization: {
-  //   runtimeChunk: true,
-  //   splitChunks: {
-  //     cacheGroups: {
-  //     commons: {
-  //       test: /[\\/]node_modules[\\/]/,
-  //       name: "vendors",
-  //       chunks: "all"
-  //       }
-  //     }
-  //   }
-  // },
+  optimization: {
+    runtimeChunk: true,
+    splitChunks: {
+      cacheGroups: {
+      commons: {
+        test: /[\\/]node_modules[\\/]/,
+        name: "vendors",
+        chunks: "all"
+        }
+      }
+    }
+  },
 }

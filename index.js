@@ -21,8 +21,8 @@ const html = (markup, bundles) => {
       </head>
       <body>
         <div id="root">${markup}</div>
-
-
+        <script src="/client/runtime~main.bundle.js"></script>
+        <script src="/client/vendors.bundle.js"></script>
         ${bundles.map(bundle => {
           return `<script src="/client/${bundle.file}"></script>`
         }).join('\n')}
