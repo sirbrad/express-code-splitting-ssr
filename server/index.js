@@ -4,7 +4,6 @@ import React from "react";
 import { renderToString } from "react-dom/server";
 import Loadable from 'react-loadable';
 import App from "../client/App";
-import manifest from "../dist/manifest";
 import { getBundles } from 'react-loadable/webpack'
 import stats from '../dist/react-loadable.json';
 
@@ -16,7 +15,7 @@ const html = (markup, bundles) => {
     <html>
       <head>
         <meta charset="utf-8">
-        <title>React SSR!</title>
+        <title>React ssr!</title>
       </head>
       <body>
         <div id="root">${markup}</div>

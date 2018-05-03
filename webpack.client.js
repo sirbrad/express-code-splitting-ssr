@@ -38,6 +38,16 @@ module.exports = {
       fileName: path.resolve(__dirname, './dist/manifest.json')
     }),
   ],
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    proxy: [ // allows redirect of requests to webpack-dev-server to another destination
+      {
+        context: ['/'],  // can have multiple
+        target: 'http://localhost:3000', // server and port to redirect to
+        secure: false,
+      },
+    ],
+  },
   optimization: {
     runtimeChunk: true,
     splitChunks: {
