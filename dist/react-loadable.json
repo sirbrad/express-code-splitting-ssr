@@ -1,76 +1,149 @@
 {
-  "../client/App": [
+  "./Foo": [
     {
-      "id": "./client/App.js",
-      "name": "./client/App.js",
-      "file": "server.bundle.js"
-    }
-  ],
-  "./Loading": [
-    {
-      "id": "./client/Loading.js",
-      "name": "./client/Loading.js",
-      "file": "server.bundle.js"
-    }
-  ],
-  "../dist/react-loadable.json": [
-    {
-      "id": "./dist/react-loadable.json",
-      "name": "./dist/react-loadable.json",
-      "file": "server.bundle.js"
-    }
-  ],
-  "./server/index.js": [
-    {
-      "id": "./server/index.js",
-      "name": "./server/index.js",
-      "file": "server.bundle.js"
-    }
-  ],
-  "undefined": [
-    {
-      "id": "express",
-      "name": "express",
-      "file": "server.bundle.js"
-    },
-    {
-      "id": "path",
-      "name": "path",
-      "file": "server.bundle.js"
-    },
-    {
-      "id": "react",
-      "name": "react",
-      "file": "server.bundle.js"
-    },
-    {
-      "id": "react-dom/server",
-      "name": "react-dom/server",
-      "file": "server.bundle.js"
-    },
-    {
-      "id": "react-loadable",
-      "name": "react-loadable",
-      "file": "server.bundle.js"
-    },
-    {
-      "id": "react-loadable/webpack",
-      "name": "react-loadable/webpack",
-      "file": "server.bundle.js"
+      "id": 8,
+      "name": "./client/Foo.js",
+      "file": "0.bundle.js"
     }
   ],
   "./Bar": [
     {
-      "id": "./client/Bar.js",
+      "id": 9,
       "name": "./client/Bar.js",
-      "file": "0.bundle.js"
+      "file": "1.bundle.js"
     }
   ],
-  "./Foo": [
+  "react": [
     {
-      "id": "./client/Foo.js",
-      "name": "./client/Foo.js",
-      "file": "1.bundle.js"
+      "id": 0,
+      "name": "./node_modules/react/index.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "react-loadable": [
+    {
+      "id": 1,
+      "name": "./node_modules/react-loadable/lib/index.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "fbjs/lib/emptyFunction": [
+    {
+      "id": 2,
+      "name": "./node_modules/fbjs/lib/emptyFunction.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "fbjs/lib/invariant": [
+    {
+      "id": 3,
+      "name": "./node_modules/fbjs/lib/invariant.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "fbjs/lib/emptyObject": [
+    {
+      "id": 4,
+      "name": "./node_modules/fbjs/lib/emptyObject.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "object-assign": [
+    {
+      "id": 5,
+      "name": "./node_modules/object-assign/index.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "react-dom": [
+    {
+      "id": 6,
+      "name": "./node_modules/react-dom/index.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "./lib/ReactPropTypesSecret": [
+    {
+      "id": 10,
+      "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "./factoryWithThrowingShims": [
+    {
+      "id": 11,
+      "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "prop-types": [
+    {
+      "id": 12,
+      "name": "./node_modules/prop-types/index.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "./isNode": [
+    {
+      "id": 13,
+      "name": "./node_modules/fbjs/lib/isNode.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "./isTextNode": [
+    {
+      "id": 14,
+      "name": "./node_modules/fbjs/lib/isTextNode.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "fbjs/lib/containsNode": [
+    {
+      "id": 15,
+      "name": "./node_modules/fbjs/lib/containsNode.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "fbjs/lib/shallowEqual": [
+    {
+      "id": 16,
+      "name": "./node_modules/fbjs/lib/shallowEqual.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "fbjs/lib/getActiveElement": [
+    {
+      "id": 17,
+      "name": "./node_modules/fbjs/lib/getActiveElement.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "fbjs/lib/ExecutionEnvironment": [
+    {
+      "id": 18,
+      "name": "./node_modules/fbjs/lib/ExecutionEnvironment.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "./cjs/react-dom.production.min.js": [
+    {
+      "id": 19,
+      "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "./cjs/react.production.min.js": [
+    {
+      "id": 20,
+      "name": "./node_modules/react/cjs/react.production.min.js",
+      "file": "vendors.bundle.js"
+    }
+  ],
+  "undefined": [
+    {
+      "id": 7,
+      "name": "./client/index.js",
+      "file": "main.bundle.js"
     }
   ]
 }
