@@ -1,6 +1,6 @@
 const path = require("path");
+const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
-const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
 
 module.exports = {
   context: __dirname,
@@ -11,7 +11,7 @@ module.exports = {
   },
   output: {
     filename: "[name].bundle.js",
-    path: path.join(__dirname, "./dist/server"),
+    path: path.join(__dirname, "dist/server"),
   },
   resolve: {
     modules: [
@@ -32,8 +32,6 @@ module.exports = {
     nodeExternals()
   ],
   plugins: [
-    new ReactLoadablePlugin({
-      filename: './dist/react-loadable.json',
-    }),
-  ]
+    webpack.optimize.LimitChunkCountPlugin({maxChunks: 1})
+  ],
 }

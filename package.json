@@ -1,12 +1,14 @@
 {
   "name": "express-ssr",
   "version": "1.0.0",
-  "main": "server/index.js",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --config webpack.client.js --watch --progress",
-    "server": "webpack --config webpack.server.js --watch --progress",
-    "server-babel": "babel-node ./server/index.js --presets env,react --plugins dynamic-import-node"
+    "build:dev:client": "webpack --config webpack.client.js",
+    "clean": "rm -rf ./dist",
+    "start": "npm-run-all clean build:dev:client -p start:*",
+    "start:client": "webpack-dev-server --config webpack.client.js --color",
+    "start:server": "nodemon server/index.js --verbose --ignore dist --exec babel-node --presets env,react --plugins dynamic-import-node"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

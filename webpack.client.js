@@ -2,6 +2,9 @@ const path = require("path");
 const webpack = require("webpack");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
+
+const proxyLog = (msg) => console.log('\x1b[36m%s\x1b[0m', 'proxy', msg);
 
 module.exports = {
   context: __dirname,
@@ -37,6 +40,9 @@ module.exports = {
     new ManifestPlugin({
       fileName: path.resolve(__dirname, './dist/manifest.json')
     }),
+    new ReactLoadablePlugin({
+      filename: './dist/react-loadable.json',
+    }),
   ],
   devServer: {
     contentBase: path.join(__dirname, "dist"),
@@ -47,6 +53,37 @@ module.exports = {
         secure: false,
       },
     ],
+    before(app) {
+      const net = require('net');
+      const opts = { port: 3000 };
+      const socket = net.connect(opts);
+      let connected = false;
+
+      socket.on('connect', () => {
+        proxyLog('connectd');
+        connected = true;
+      })
+
+      socket.on('error', (err) => proxyLog('Error: ' + err.message))
+
+      socket.on('close', (err) => {
+        proxyLog('closed');
+        connected = false;
+
+        setTimeout(() => {
+          proxyLog('connecting...');
+          socket.connect(opts);
+        }, 1000);
+      });
+
+      app.use((req, res, next) => {
+        if (connected) {
+          next();
+        } else {
+          socket.once('connect', () => next());
+        }
+      });
+    }
   },
   optimization: {
     runtimeChunk: true,
