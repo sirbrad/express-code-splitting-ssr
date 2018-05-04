@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const ReactLoadablePlugin = require('react-loadable/webpack').ReactLoadablePlugin;
 
-const proxyLog = (msg) => console.log('\x1b[36m%s\x1b[0m', 'proxy', msg);
+const proxyLog = (msg) => console.log('\x1b[36m%s\x1b[0m', '[proxy]', msg);
 
 module.exports = {
   context: __dirname,
